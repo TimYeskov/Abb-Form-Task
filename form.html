@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Timur's Forms</title>
+  </head>
+  <body>
+    <section class="login__hide">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="container__header">
+          <div>
+            <img
+              src="../Projects/Abiturient/src/img/cacnel.svg"
+              class="cancel"
+            />
+          </div>
+
+          <h2>Welcome to Login</h2>
+        </div>
+        <div class="container__wrapper">
+          <div class="container__login">
+            <form class="login__form" method="post">
+              <input type="text" name="Email" placeholder="johndoe@gmail.com" />
+              <input type="password" name="password" placeholder="password" />
+            </form>
+            <div class="container__settings">
+              <h4>Remember Me</h4>
+              <a>Forgot Password</a>
+            </div>
+            <button class="loginBtn" type="submit">LOGIN</button>
+            <h4 class="underBtn">
+              Don’t have an Account? <span>Register Here</span>
+            </h4>
+            <button class="googleReg">
+              <img src="../Projects/Abiturient/src/img/googleLogo.png" />
+              <h4>Login with Google</h4>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup">
+      <header>
+        <img src="../Projects/Abiturient/src/img/logo.png" class="logo" />
+        <div>
+          <!-- <img alt="theme" class="theme" onClick="{onChangeTheme}" /> -->
+          <h4>Already have an account? </h4>
+          <button class="login__button">Log In</button>
+        </div>
+      </header>
+      <main>
+        <h1>Get started on Heroku today</h1>
+        <div class="signup__wrapper">
+          <div class="wrapper__left">
+            <div class="left__block">
+              <div>
+                <img
+                  src="../Projects/Abiturient/src/img/user-signup.svg"
+                  alt="icon"
+                />
+                <h3>Heroku account</h3>
+              </div>
+              <h4>
+                Create apps, connect databases and add-on services, and
+                collaborate on your apps.
+              </h4>
+            </div>
+            <div class="left__block">
+              <div>
+                <img
+                  src="../Projects/Abiturient/src/img/user-signup.svg"
+                  alt="icon"
+                />
+                <h3>Your app platform</h3>
+              </div>
+              <h4>
+                Create apps, connect databases and add-on services, and
+                collaborate on your apps.
+              </h4>
+            </div>
+            <div class="left__block">
+              <div>
+                <img
+                  src="../Projects/Abiturient/src/img/user-signup.svg"
+                  alt="icon"
+                />
+                <h3>Deploy now</h3>
+              </div>
+              <h4>
+                Create apps, connect databases and add-on services, and
+                collaborate on your apps.
+              </h4>
+            </div>
+          </div>
+          <div class="wrapper__right">
+            <form method="post">
+              <div class="input__block">
+                <div>
+                  <label for="firstName"> First name <span>*</span> </label>
+                </div>
+
+                <input
+                  type="text"
+                  name="firstname"
+                  placeholder="name"
+                  id="firstName"
+                  required
+                />
+              </div>
+
+              <div class="input__block">
+                <div>
+                  <label for="lastName"> Last name <span>*</span> </label>
+                </div>
+
+                <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Last Name"
+                  id="lastName"
+                  required
+                />
+              </div>
+
+              <div class="input__block">
+                <div>
+                  <label for="mail">Email adress</label>
+                </div>
+
+                <input
+                  type="text"
+                  name="password"
+                  placeholder="user@gmail.com"
+                  id="mail"
+                />
+              </div>
+
+              <div class="input__block">
+                <div>
+                  <label for="password"> Password <span>*</span> </label>
+                </div>
+
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  id="password"
+                  required
+                />
+              </div>
+
+              <div class="input__block">
+                <div>
+                  <label for="repeatPassword">
+                    Repeat password <span>*</span>
+                  </label>
+                </div>
+
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Repeat password"
+                  id="repeatPassword"
+                  required
+                />
+              </div>
+
+              <select>
+                <option value="" disabled selected>Выберите группу</option>
+                <option value="1">Группа 1</option>
+                <option value="2">Группа 2</option>
+                <option value="3">Группа 3</option>
+                <option value="4">Группа 4</option>
+              </select>
+              <button type="submit">Create an account</button>
+            </form>
+          </div>
+        </div>
+        <div class="feedback">
+          <h2>What can i do for you?</h2>
+          <h3>I am ready to work on a project of any complexity.</h3>
+          <form
+            ref="{form}"
+            onSubmit="{sendEmail}"
+            class="feedback__form"
+            method="post"
+          >
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="user_name"
+              required
+            />
+            <input type="text" placeholder="Email" name="user_mail" required />
+            <select name="user_select" required>
+              <option value="" disabled>Reason for Contacting*</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <input type="number" placeholder="Phone" name="user_phone" />
+            <input
+              type="file"
+              id="file"
+              name="file"
+              accept=".jpg, .jpeg, .png, .pdf"
+              class="input__file"
+            />
+            <textarea
+              type="text"
+              placeholder="Message"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </main>
+    </section>
+    <script>
+      const loginHide = document.querySelector(".login__hide");
+      const loginWrapper = document.querySelector(".login__wrapper");
+      const loginButton = document.querySelector(".login__button");
+      const cancelButton = document.querySelector(".cancel");
+      loginButton.addEventListener("click", function () {
+        loginHide.classList.add("login__wrapper");
+      });
+      cancelButton.addEventListener("click", function () {
+        loginHide.classList.remove("login__wrapper");
+      });
+    </script>
+  </body>
+</html>
